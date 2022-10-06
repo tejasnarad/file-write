@@ -18,7 +18,7 @@ f.close()
 i=0
 
 while True:
-    if i==8760:
+    if i==500:
         break
     f = open('file.txt', 'a')
     f.write('\nThis is a new line '+str(i)+'\n')
