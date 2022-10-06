@@ -4,15 +4,15 @@
 #for displaing the output of the script in a text box
 
 
-
+file='file.txt'
 #read text file and give content in string
-f = open('file.txt', 'r')
+f = open(file, 'r')
 
 a=f.read()
 f.close()
 
 #log data in file test.txt
-f = open('file.txt', 'a')
+f = open(file, 'a')
 f.write('\nThis is a new line '+a+'\n')
 f.close()
 i=0
@@ -20,7 +20,7 @@ i=0
 while True:
     if i==500:
         break
-    f = open('file.txt', 'a')
+    f = open(file, 'a')
     f.write('\nThis is a new line '+str(i)+'\n')
     f.close()
     i+=1
