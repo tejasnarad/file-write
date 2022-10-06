@@ -21,22 +21,6 @@ strategy:
 
 steps:
 
-- task: ServiceNow-DevOps-Server-Change-Acceleration@1
-  inputs:
-    connectedServiceName: 'azure snow'
-    changeRequestDetails: |
-      {
-          "setCloseCode" : true,
-          "attributes": {
-            "requested_by": {
-              "name": "test user"
-            },
-            "start_date": "2021-01-05 08:00:00",
-            "end_date": "2021-01-08 08:00:00"
-          }
-        }
-    applicationName: 'Snow'
-    
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
