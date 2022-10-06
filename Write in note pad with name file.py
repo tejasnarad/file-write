@@ -4,7 +4,7 @@
 #for displaing the output of the script in a text box
 
 
-file='file.txt'
+file ='file.txt'
 #read text file and give content in string
 f = open(file, 'r')
 
