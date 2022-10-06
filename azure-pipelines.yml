@@ -35,23 +35,19 @@ steps:
     pytest
   displayName: 'pytest'
 
+
 - task: ServiceNow-DevOps-Server-Change-Acceleration@1
   inputs:
     connectedServiceName: 'azure snow'
     changeRequestDetails: |
       {
-              "setCloseCode": false,
-              "attributes": {
-                "requested_by": {
-                    "name": "test user"
-                },
-                "category": "DevOps",
-                "priority": "2",
-                "comments": "This is a sample pipeline script to be added in your change step",
-                "work_notes": "Update this to work_notes",
-                "start_date": "2022-01-05 11:59:59",
-                "end_date": "2022-01-08 11:59:59"
-              }
-            }
+          "setCloseCode" : true,
+          "attributes": {
+            "requested_by": {
+              "name": "test user"
+            },
+            "start_date": "2021-01-05 08:00:00",
+            "end_date": "2021-01-08 08:00:00"
+          }
+        }
     applicationName: 'Snow'
-
