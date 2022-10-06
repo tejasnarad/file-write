@@ -35,7 +35,7 @@ steps:
     pytest
   displayName: 'pytest'
 
-- task: ServiceNow-DevOps-Server-Change-Acceleration@1
+- task: ServiceNow-DevOps-Server-Change-Acceleration@1.35.0
   inputs:
     connectedServiceName: 'DevopsDemoProject-ServiceNow DevOps Service Connection'
     changeRequestDetails: |
