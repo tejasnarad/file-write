@@ -17,6 +17,7 @@ f.write('\nThis is a new line '+a+'\n')
 f.close()
 i=0
 
+
 while True:
     if i==500:
         break
