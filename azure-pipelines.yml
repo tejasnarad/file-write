@@ -32,3 +32,10 @@ steps:
     pytest
   displayName: 'pytest'
 
+
+    
+- task: ServiceNow-DevOps-Build-Sonar-Registration@1
+  inputs:
+    connectedServiceName: 'perficientincdemo9-Demo project (medium)-ServiceNow DevOps Service Connection'
+    sonarProjectKey: 'tejasnarad_file-write'
+    sonarInstanceUrl: 'https://sonarcloud.io/'
