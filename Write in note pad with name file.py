@@ -15,13 +15,15 @@ f.close()
 f = open(file, 'a')
 f.write('\nThis is a new line '+a+'\n')
 f.close()
+
+
 i=0
 
 while True:
 
     if i==500:
         break
-    
+
     f = open(file, 'a')
     f.write('\nThis is a new line '+str(i)+'\n')
     f.close()
